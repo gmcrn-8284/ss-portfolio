@@ -19,6 +19,7 @@ header {
     height: 90px;
     background-color: antiquewhite;
     color: aqua;
+    /* position: fixed; */
     /* box-sizing: border-box; */
 }
 
@@ -34,24 +35,139 @@ a {
     padding-top: 15px;
 }
 
-.side-menu {
-    width: 150px;
-    background-color: blue;
-    height: 800px;
-    display: block;
-    position:fixed;
-    top: 90px;
-}
+.side-menu 
 
 main {
     width: 100%;
     top: 90px;
     height: 100%;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     display: block;
 }
 
 .count-pikmin {
-    padding-left: 100px ;
+    width: 60%;
+    height: 120px;
+    border: 2px solid;
+    /* padding: auto; */
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 36px;
 }
 
+.pikmin-collection {
+
+}
+
+.pikmin-type-restaurant {
+    height: 760px;
+    margin: 40px auto;
+    width: 60%;
+    /* border: 2px solid; */
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.pikmin-type-logo-restaurant {
+    /* border: 2px solid; */
+    height: 120px;
+    width: 100%;
+    margin: 40px auto;  
+    padding-top: 10px;
+    text-align: center;
+}
+
+.pikmin-type-cafe {
+    height: 760px;
+    margin: 40px auto;
+    width: 60%;
+    /* border: 2px solid; */
+
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.pikmin-type-logo-cafe {
+    /* border: 2px solid; */
+    height: 120px;
+    width: 100%;
+    margin: 40px auto;  
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.upper {
+    float: left;
+    width: 33%;
+}
+
+.red {
+    background-color: red;
+    border: 2px solid;
+    height: 168px;
+    width: 168px;
+    margin: 40px auto;
+}
+.red img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.red:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.yellow {
+    background-color: yellow;
+    border: 2px solid;
+    height: 168px;
+    width: 168px;
+    margin: 40px auto;
+}
+
+.blue {
+    background-color: blue;
+    border: 2px solid;
+    height: 168px;
+    width: 168px;
+    margin: 40px auto;
+}
+
+.lower {
+    float: left;
+    width: 25%;
+}
+
+.white {
+    background-color: white;
+    border: 2px solid;
+    height: 168px;
+    width: 168px;
+    margin: 40px auto;
+}
+
+.purple {
+    background-color: purple;
+    border: 2px solid;
+    height: 168px;
+    width: 168px;
+    margin: 40px auto;
+}
+
+.rock {
+    background-color: gray;
+    border: 2px solid;
+    height: 168px;
+    width: 168px;
+    margin: 40px auto;
+}
+
+.wing {
+    background-color: pink;
+    border: 2px solid;
+    height: 168px;
+    width: 168px;
+    margin: 40px auto;
+}

@@ -11,13 +11,12 @@
 <body>
     <header>
         <div class="header-logo">
-            <a href="#">pikmin collection</a>
+            <a href="#">pikmin</a>
         </div>
     </header>
-    <div class="side-menu-btn">
-        <button>
-            <img class="side-menu-btn-open" src="image/sidemenu-open.png" width="80px" onclick="openMenu()">
-        </button>
+    <div>
+        <button class="side-menu-btn">ボタン</button>
+        <!-- <img class="side-menu-btn-open" src="image/sidemenu-open.png" width="80px" onclick="openMenu()"> -->
     </div>
     <div class="side-menu">
         <ul>
@@ -26,6 +25,15 @@
             </li>
             <li>
                 <a href="#pikmin-type-cafe">cafe</a>
+            </li>
+            <li>
+                <a href="#pikmin-type-pharmacy">pharmacy</a>
+            </li>
+            <li>
+                <a href="#pikmin-type-river">river</a>
+            </li>
+            <li>
+                <a href="#pikmin-type-park">park</a>
             </li>
         </ul>
     </div>
@@ -36,68 +44,176 @@
         <div class="pikmin-collections">
             <div class="pikmin-type-restaurant" id="pikmin-type-restaurant">
                 <div class="pikmin-type-logo-restaurant">
-                    <img src="image/restaurant-logo.jpg" width="240px" alt="">
+                    <img src="image/type-logo/restaurant-logo.jpg" width="240px" alt="">
                 </div>
                 <div class="pikmins">
                     <div class="pikmin-upper">
                         <div class="pikmin upper">
-                            <div class="red"></div>
+                            <div class="red"><img src="image/have-pikmins/restaurant-red.jpg" width="164px" height="164px"></div>
                         </div>
                         <div class="pikmin upper">
-                            <div class="yellow"></div>
+                            <div class="yellow"><img src="image/have-pikmins/restaurant-yellow.jpg" height="164px" width="164px"></div>
                         </div>
                         <div class="pikmin upper">
-                            <div class="blue"></div>
+                            <div class="blue"><img src="image/have-pikmins/restaurant-blue.jpg" width="164px" height="164px"></div>
                         </div>
                     </div>
                     <div class="pikmin-lower">
                         <div class="pikmin lower">
-                            <div class="white"></div>
+                            <div class="white"><img src="image/have-pikmins/restaurant-white.jpg" width="164px" height="164px"></div>
                         </div>
                         <div class="pikmin lower">
-                            <div class="purple"></div>
+                            <div class="purple"><img src="image/have-pikmins/restaurant-purple.jpg" width="164px" height="164px"></div>
                         </div>
                         <div class="pikmin lower">
-                            <div class="rock"></div>
+                            <div class="rock"><img src="image/have-pikmins/restaurant-rock.jpg" width="164px" height="164px"></div>
                         </div>
                         <div class="pikmin lower">
-                            <div class="wing"></div>
+                            <div class="wing"><img src="image/have-pikmins/restaurant-wing.jpg" width="164px" height="164px"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="pikmin-type-cafe" id="pikmin-type-cafe">
                 <div class="pikmin-type-logo-cafe">
-                    <img src="image/cafe-logo.jpg" width="240px">
+                    <img src="image/type-logo/cafe-logo.jpg" width="240px">
                 </div>
                 <div class="pikmins">
                     <div class="pikmin-upper">
                         <div class="pikmin upper">
                             <div class="red">
-                                <img src="image/pikmin-cafe-red.jpg" width="164px" height="164px" onclick="alertButton()">
+                                <img src="image/have-pikmins/cafe-red.jpg" width="164px" height="164px" onclick="alertButton()">
                             </div>
                         </div>
                         <div class="pikmin upper">
                             <div class="yellow">
-                                <img src="image/pikmin-cafe-yellow.jpg" width="164px" height="164px" alt="">
+                                <img src="image/have-pikmins/cafe-yellow.jpg" width="164px" height="164px" alt="">
                             </div>
                         </div>
                         <div class="pikmin upper">
-                            <div class="blue"></div>
+                            <div class="blue"><img src="image/have-pikmins/cafe-blue.jpg" width="164px" height="164px" alt=""></div>
                         </div>
                     </div>
                     <div class="pikmin-lower">
                         <div class="pikmin lower">
-                            <div class="white"></div>
+                            <div class="white"><img src="image/have-pikmins/cafe-white.jpg" width="164px" height="164px" alt=""></div>
                         </div>
                         <div class="pikmin lower">
-                            <div class="purple"></div>
+                            <div class="purple"><img src="image/have-pikmins/cafe-purple.jpg" width="164px" height="164px" alt=""></div>
                         </div>
                         <div class="pikmin lower">
-                            <div class="rock"></div>
+                            <div class="rock"><img src="image/have-pikmins/cafe-rock.jpg" width="164px" height="164px" alt=""></div>
                         </div>
                         <div class="pikmin lower">
-                            <div class="wing"></div>
+                            <div class="wing"><img src="image/have-pikmins/cafe-wing.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pikmin-type-pharmacy" id="pikmin-type-pharmacy">
+                <div class="pikmin-type-logo-pharmacy">
+                    <img src="image/type-logo/pharmacy-logo.jpg" width="240px">
+                </div>
+                <div class="pikmins">
+                    <div class="pikmin-upper">
+                        <div class="pikmin upper">
+                            <div class="red">
+                                <img src="image/have-pikmins/pharmacy-red.jpg" width="164px" height="164px" onclick="alertButton()">
+                            </div>
+                        </div>
+                        <div class="pikmin upper">
+                            <div class="yellow">
+                                <img src="image/have-pikmins/pharmacy-yellow.jpg" width="164px" height="164px" alt="">
+                            </div>
+                        </div>
+                        <div class="pikmin upper">
+                            <div class="blue"><img src="image/have-pikmins/pharmacy-blue.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="pikmin-lower">
+                        <div class="pikmin lower">
+                            <div class="white"><img src="image/have-pikmins/pharmacy-white.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="purple"><img src="image/have-pikmins/pharmacy-purple.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="rock"><img src="image/have-pikmins/pharmacy-rock.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="wing"><img src="image/have-pikmins/pharmacy-wing.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pikmin-type-river" id="pikmin-type-river">
+                <div class="pikmin-type-logo-river">
+                    <img src="image/type-logo/river-logo.jpg" width="240px">
+                </div>
+                <div class="pikmins">
+                    <div class="pikmin-upper">
+                        <div class="pikmin upper">
+                            <div class="red">
+                                <img src="image/have-pikmins/river-red.jpg" width="164px" height="164px" onclick="alertButton()">
+                            </div>
+                        </div>
+                        <div class="pikmin upper">
+                            <div class="yellow">
+                                <img src="image/have-pikmins/river-yellow.jpg" width="164px" height="164px" alt="">
+                            </div>
+                        </div>
+                        <div class="pikmin upper">
+                            <div class="blue"><img src="image/have-pikmins/river-blue.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="pikmin-lower">
+                        <div class="pikmin lower">
+                            <div class="white"><img src="image/have-pikmins/river-white.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="purple"><img src="image/have-pikmins/river-purple.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="rock"><img src="image/have-pikmins/river-rock.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="wing"><img src="image/have-pikmins/river-wing.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pikmin-type-park" id="pikmin-type-park">
+                <div class="pikmin-type-logo-park">
+                    <img src="image/type-logo/park-logo.jpg" width="240px">
+                </div>
+                <div class="pikmins">
+                    <div class="pikmin-upper">
+                        <div class="pikmin upper">
+                            <div class="red">
+                                <img src="image/have-pikmins/park-red.jpg" width="164px" height="164px" onclick="alertButton()">
+                            </div>
+                        </div>
+                        <div class="pikmin upper">
+                            <div class="yellow">
+                                <img src="image/have-pikmins/park-yellow.jpg" width="164px" height="164px" alt="">
+                            </div>
+                        </div>
+                        <div class="pikmin upper">
+                            <div class="blue"><img src="image/have-pikmins/park-blue.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="pikmin-lower">
+                        <div class="pikmin lower">
+                            <div class="white"><img src="image/have-pikmins/park-white.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="purple"><img src="image/have-pikmins/park-purple.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="rock"><img src="image/have-pikmins/park-rock.jpg" width="164px" height="164px" alt=""></div>
+                        </div>
+                        <div class="pikmin lower">
+                            <div class="wing"><img src="image/have-pikmins/park-wing.jpg" width="164px" height="164px" alt=""></div>
                         </div>
                     </div>
                 </div>

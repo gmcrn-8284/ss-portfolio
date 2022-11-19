@@ -19,6 +19,7 @@ header {
     height: 90px;
     background-color: antiquewhite;
     color: aqua;
+    font-style: italic;
     /* position: fixed; */
     /* box-sizing: border-box; */
 }
@@ -35,16 +36,21 @@ a {
     padding-top: 15px;
 }
 
-.side-menu-btn {
+.side-menu {
+    background-color: aquamarine;
+    width: 200px;
+    height: 720px;
+    margin: 0 ;
     position: fixed;
-    
+    text-align: center;
 }
-.side-menu-btn-open {
-    opacity: 1;
+    .side-menu.open {
+        background-color: aliceblue;
+    }
+.side-menu li{
+    margin-top: 10px;
 }
-.side-menu-btn-open :active{
-    opacity: 0;
-}
+
 
 main {
     width: 100%;
@@ -106,6 +112,62 @@ main {
     text-align: center;
 }
 
+.pikmin-type-pharmacy {
+    height: 760px;
+    margin: 40px auto;
+    width: 60%;
+    /* border: 2px solid; */
+
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+.pikmin-type-logo-pharmacy {
+    /* border: 2px solid; */
+    height: 120px;
+    width: 100%;
+    margin: 40px auto;  
+    padding-top: 10px;
+    text-align: center;
+}
+
+.pikmin-type-logo-river {
+    /* border: 2px solid; */
+    height: 120px;
+    width: 100%;
+    margin: 40px auto;  
+    padding-top: 10px;
+    text-align: center;
+}
+
+.pikmin-type-river {
+    height: 760px;
+    margin: 40px auto;
+    width: 60%;
+    /* border: 2px solid; */
+
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.pikmin-type-logo-park {
+    /* border: 2px solid; */
+    height: 120px;
+    width: 100%;
+    margin: 40px auto;  
+    padding-top: 10px;
+    text-align: center;
+}
+
+.pikmin-type-park {
+    height: 760px;
+    margin: 40px auto;
+    width: 60%;
+    /* border: 2px solid; */
+
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
 
 .upper {
     float: left;
@@ -130,20 +192,42 @@ main {
     transition-duration: 0.3s;
 }
 
+
+
 .yellow {
     background-color: yellow;
     border: 2px solid;
+    border-radius: 20px;
     height: 168px;
     width: 168px;
     margin: 40px auto;
+}
+.yellow img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+}
+.yellow:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
 }
 
 .blue {
     background-color: blue;
     border: 2px solid;
+    border-radius: 20px;
     height: 168px;
     width: 168px;
     margin: 40px auto;
+}
+.blue img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+}
+.blue:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
 }
 
 .lower {
@@ -154,31 +238,71 @@ main {
 .white {
     background-color: white;
     border: 2px solid;
+    border-radius: 20px;
     height: 168px;
     width: 168px;
     margin: 40px auto;
+}
+.white img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+}
+.white:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
 }
 
 .purple {
     background-color: purple;
     border: 2px solid;
+    border-radius: 20px;
     height: 168px;
     width: 168px;
     margin: 40px auto;
+}
+.purple img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+}
+.purple:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
 }
 
 .rock {
     background-color: gray;
     border: 2px solid;
+    border-radius: 20px;
     height: 168px;
     width: 168px;
     margin: 40px auto;
+}
+.rock img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+}
+.rock:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
 }
 
 .wing {
     background-color: pink;
     border: 2px solid;
+    border-radius: 20px;
     height: 168px;
     width: 168px;
     margin: 40px auto;
+}
+.wing img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+}
+.wing:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
 }

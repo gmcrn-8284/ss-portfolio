@@ -2,7 +2,14 @@ function alertButton() {
     alert('クリックされました')
 }
 
-let button = document.querySelector('.side-menu-btn-open');
-let openMenu = function() {
-    button.classList.add('active');
-}
+const redOpa = document.querySelector('.red');
+const redOpapa = addEventListener('click', () => {
+    redOpa.classList.toggle('.open');
+});
+
+const openMenuBtn = document.querySelector('side-menu-btn');
+const sideMenu = document.getElementsByClassName('side-menu')
+const openMenu = openMenuBtn.addEventListener('click', () => {
+    // sideMenu.classList.toggle('open');
+    alert('OK');
+});

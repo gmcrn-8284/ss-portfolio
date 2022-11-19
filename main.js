@@ -13,3 +13,4 @@ const openMenu = openMenuBtn.addEventListener('click', () => {
     // sideMenu.classList.toggle('open');
     alert('OK');
 });
+

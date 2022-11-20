@@ -1,31 +1,4 @@
-// function alertButton() {
-//     alert('クリックされました')
-// }
 
-// const redOpa = document.querySelector('.red');
-// const redOpapa = addEventListener('click', () => {
-//     redOpa.classList.toggle('.open');
-// });
-
-// const openMenuBtn = document.querySelector('.side-menu-btn');
-// // const sideMenu = document.getElementsByClassName('.side-menu')
-// const openMenu = openMenuBtn.addEventListener('click', () => {
-//     sideMenu.classList.toggle('open');
-// });
-window.addEventListener("load", function(){
-    
-    // const closeMenu = closeMenuBtn.addEventListener('click', function() {
-    //     sideMenu.classList.toggle('close');
-    // });
-    
-});
-// const closeMenuBtn =document.getElementById('closeBtn');
-// const sideMenu = document.getElementById('side-menu');
-// if(!closeMenuBtn){return false;}
-// const closeMenu = function() {
-//     sideMenu.classList.toggle('close');
-//     console.log('aiueo')
-// };
 
 // <--------------   サイドメニューのopen, close関数     -------------------->
 

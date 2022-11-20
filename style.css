@@ -44,13 +44,30 @@ a {
     width: 200px;
     height: 100%;
     margin-top: -110px;
-    padding-left: -200px;
+    margin-left: 0px;
     position: fixed;
     opacity: 0.6;
+    animation: SlideIn 1.0s;
 }
-input:checked ~ .side-menu{
-    
+/* @keyframes SlideIn {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -200px;
+    }
+} */
+
+.side-menu.close {
+    margin-left: -200px;
 }
+
+#closeBtn {
+    cursor: pointer;
+}
+/* input[type="checkbox"]{
+    margin-left: -200px;
+} */
 /* .close-btn {
     background-color: gray;
     border: none;

@@ -20,8 +20,8 @@
     </div>
     
     <div class="side-menu">
-        <label type="radio" for="closeMenu">×</label>
-        <input type="checkbox" id="closeMenu">
+        <button id="closeBtn" onclick="closeMenu()">×</button>
+        <!-- <input type="checkbox" id="closeMenu"> -->
         <ul class="sidemenu-list">
             <li>
                 <a href="#pikmin-type-restaurant">restaurant</a>
@@ -52,7 +52,7 @@
                 <div class="pikmins">
                     <div class="pikmin-upper">
                         <div class="pikmin upper">
-                            <div class="red"><label type="radio" for="testid" ><img src="image/have-pikmins/restaurant-red.jpg" width="164px" height="164px"></label></div>
+                            <div class="red"><img src="image/have-pikmins/restaurant-red.jpg" width="164px" height="164px"></label></div>
                             <input type="checkbox" id="testid">
                         </div>
                         <div class="pikmin upper">
@@ -86,7 +86,7 @@
                     <div class="pikmin-upper">
                         <div class="pikmin upper">
                             <div class="red">
-                                <img src="image/have-pikmins/cafe-red.jpg" width="164px" height="164px" onclick="alertButton()">
+                                <img class="pikminImg" onclick="changeImg(0)" src="image/have-pikmins/cafe-red.jpg" width="164px" height="164px" onclick="alertButton()">
                             </div>
                         </div>
                         <div class="pikmin upper">

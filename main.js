@@ -27,6 +27,13 @@ window.addEventListener("load", function(){
 //     console.log('aiueo')
 // };
 
+// <--------------   サイドメニューのopen, close関数     -------------------->
+
+function openMenu() {
+    const sideMenu = document.querySelector('.side-menu');
+    sideMenu.classList.toggle('open');
+}
+
 function closeMenu() {
     const sideMenu = document.querySelector('.side-menu');
     sideMenu.classList.toggle('close');
@@ -43,6 +50,7 @@ let restaurant_pic_srcs = new Array(
     ["image/not-have-pikmin.jpg","image/have-pikmins/restaurant-wing.jpg"]
 );
 let havePikmin = [0,1]
+let result = []
 function restaurantChangeImg(i, c) {
     if (havePikmin[i] == 1) {
         havePikmin[i] = 0;
@@ -53,7 +61,17 @@ function restaurantChangeImg(i, c) {
     pikminImg[c].src=restaurant_pic_srcs[c][havePikmin[i]];
     console.log(havePikmin[i]);
     // console.log(havePikmin.reduce(function(sum, element){return sum+element}, 0))
+    if(havePikmin[i] == 1) {
+        result.push(1);
+    }else {
+        result.shift();
+    }
+    console.log(result)
+    console.log(result.length)
 }
+const count = result.length;
+console.log(count)
+
 
 // <--------------   カフェタイプの画像配列と切り替え処理の関数     -------------------->
 let cafe_pic_srcs = new Array(

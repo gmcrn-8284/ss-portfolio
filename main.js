@@ -42,14 +42,12 @@ function restaurantChangeImg(i, c) {
     //     havePikmin[i] ++;
     // }
     const pikminImg = document.getElementsByClassName('restaurantPikminImg');
-    if (pikminImg[c].src=restaurant_pic_srcs[c][0]) {
-        pikminImg[c].src=restaurant_pic_srcs[c][1];
-    } else if (pikminImg[c].src=restaurant_pic_srcs[c][1]) {
-        pikminImg[c].src=restaurant_pic_srcs[c][0];
+    if (pikminImg[c].getAttribute('src') == restaurant_pic_srcs[c][0]) {
+        pikminImg[c].src = restaurant_pic_srcs[c][1];
+    } else if (pikminImg[c].getAttribute('src') == restaurant_pic_srcs[c][1]) {
+        pikminImg[c].src = restaurant_pic_srcs[c][0];
     }
-    
 
-    
     // pikminImg[c].src=restaurant_pic_srcs[c][havePikmin[i]];
     // console.log(pikminImg[c].src);
     // console.log(havePikmin.reduce(function(sum, element){return sum+element}, 0))

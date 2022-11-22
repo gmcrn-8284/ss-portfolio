@@ -14,8 +14,8 @@ function openMenu() {
 function closeMenu() {
     const sideMenu = document.querySelector('.side-menu');
     const openBtn = document.querySelector('#openBtn');
-    sideMenu.classList.toggle('close');
     sideMenu.classList.remove('open');
+    sideMenu.classList.toggle('close');
     openBtn.classList.toggle('show');
     openBtn.classList.remove('hide');
     // sideMenu.classList.toggle('close');
@@ -32,17 +32,26 @@ let restaurant_pic_srcs = new Array(
     ["image/not-have-pikmin.jpg","image/have-pikmins/restaurant-rock.jpg"],
     ["image/not-have-pikmin.jpg","image/have-pikmins/restaurant-wing.jpg"]
 );
-let havePikmin = [0,1]
+let havePikmin = [0, 1]
 let result = []
 function restaurantChangeImg(i, c) {
-    if (havePikmin[i] == 1) {
-        havePikmin[i] = 0;
-    } else {
-        havePikmin[i] ++;
-    }
+    
+    // if (havePikmin[i] == 1) {
+    //     havePikmin[i] = 0;
+    // } else {
+    //     havePikmin[i] ++;
+    // }
     const pikminImg = document.getElementsByClassName('restaurantPikminImg');
-    pikminImg[c].src=restaurant_pic_srcs[c][havePikmin[i]];
-    console.log(havePikmin[i]);
+    if (pikminImg[c].src=restaurant_pic_srcs[c][0]) {
+        pikminImg[c].src=restaurant_pic_srcs[c][1];
+    } else if (pikminImg[c].src=restaurant_pic_srcs[c][1]) {
+        pikminImg[c].src=restaurant_pic_srcs[c][0];
+    }
+    
+
+    
+    // pikminImg[c].src=restaurant_pic_srcs[c][havePikmin[i]];
+    // console.log(pikminImg[c].src);
     // console.log(havePikmin.reduce(function(sum, element){return sum+element}, 0))
     // if(havePikmin[i] == 1) {
     //     result.push(1);

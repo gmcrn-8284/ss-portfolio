@@ -77,10 +77,14 @@ a {
 
 
 #openBtn {
-    padding-left: 10px;
-    padding-top: 92px;
+    border: none;
+    /* appearance: none; */ 
+    /* margin-left: 10px; */
+    height: 20px;
+    margin-top: 90px;
     font-size: 16px;
     cursor: pointer;
+    background-color: gray;
 }
 #openBtn.hide {
     opacity: 0;

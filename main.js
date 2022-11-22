@@ -1,16 +1,15 @@
 let counter, addBtn;
 let n;
 
-function addCount() {
-    n ++;
-    counter.innerHTML = n;
-}
+// function addCount() {
+//     n ++;
+//     counter.innerHTML = n;
+// }
 window.addEventListener("load", ()=> {
     counter = document.getElementById("counter");
-    addBtn = document.getElementById("addBtn");
+    // addBtn = document.getElementById("addBtn");
     n = 0;
-
-    addBtn.addEventListener("click", addCount)
+    addBtn.addEventListener("click", addCount);
 });
 
 
@@ -58,10 +57,14 @@ function restaurantChangeImg(i, c) {
     const pikminImg = document.getElementsByClassName('restaurantPikminImg');
     if (pikminImg[c].getAttribute('src') == restaurant_pic_srcs[c][0]) {
         pikminImg[c].src = restaurant_pic_srcs[c][1];
+        n ++;
     } else if (pikminImg[c].getAttribute('src') == restaurant_pic_srcs[c][1]) {
         pikminImg[c].src = restaurant_pic_srcs[c][0];
+        n --;
     }
 
+    
+    counter.innerHTML = n;
 }
 
 

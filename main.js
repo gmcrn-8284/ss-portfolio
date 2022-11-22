@@ -4,12 +4,22 @@
 
 function openMenu() {
     const sideMenu = document.querySelector('.side-menu');
+    const openBtn = document.querySelector('#openBtn');
     sideMenu.classList.toggle('open');
+    sideMenu.classList.remove('close');
+    openBtn.classList.toggle('hide');
+    openBtn.classList.remove('show');
 }
 
 function closeMenu() {
     const sideMenu = document.querySelector('.side-menu');
+    const openBtn = document.querySelector('#openBtn');
     sideMenu.classList.toggle('close');
+    sideMenu.classList.remove('open');
+    openBtn.classList.toggle('show');
+    openBtn.classList.remove('hide');
+    // sideMenu.classList.toggle('close');
+    // sideMenu.classList.remove('open');
 };
 
 // <--------------   レストランタイプの画像配列と切り替え処理     -------------------->

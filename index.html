@@ -14,8 +14,9 @@
             <a href="#">pikmn</a>
         </div>
     </header>
-    <div class="side-menu">
-        <p id="closeBtn" onclick="closeMenu()">×</p>
+    <div class="side-menu open">
+        <!-- <div id="openBtn" onclick="openMenu()">></div> -->
+        <div id="closeBtn" onclick="closeMenu()">×</div>
         <ul class="sidemenu-list">
             <li>
                 <a href="#pikmin-type-restaurant">restaurant</a>
@@ -35,7 +36,7 @@
         </ul>
     </div>
     <main>
-        <p id="openBtn" onclick="openMenu()"></p>
+        <div id="openBtn" class="hide" onclick="openMenu()">></div>
         <div class="count-pikmin">
             <p>集めたデコピクミンの種類：　<span id="count">0</span>種類</p>
         </div>

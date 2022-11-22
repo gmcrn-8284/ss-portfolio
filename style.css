@@ -45,12 +45,22 @@ a {
     width: 200px;
     height: 100%;
     margin-top: 90px;
+    /* margin-left: 0; */
     position: fixed;
     opacity: 0.6;
 }
 
 .side-menu.open {
     margin-left: 0px;
+    animation: SlideIn 0.8s;
+}
+@keyframes SlideIn {
+    0% {
+        margin-left: -200px;
+    }
+    100% {
+        margin-left: 0;
+    }
 }
 .side-menu.close {
     margin-left: -200px;
@@ -67,10 +77,16 @@ a {
 
 
 #openBtn {
-    padding-top: 92px;
     padding-left: 10px;
+    padding-top: 92px;
     font-size: 16px;
     cursor: pointer;
+}
+#openBtn.hide {
+    opacity: 0;
+}
+#openBtn.show {
+    opacity: 1;
 }
 #closeBtn {
     font-size: 20px;
@@ -78,6 +94,7 @@ a {
     background-color: gray;
     cursor: pointer;
 }
+
 
 .sidemenu-list {text-align: center;
 }

@@ -50,9 +50,8 @@ let restaurant_pic_srcs = new Array(
     ["image/not-have-pikmin.jpg","image/have-pikmins/restaurant-rock.jpg"],
     ["image/not-have-pikmin.jpg","image/have-pikmins/restaurant-wing.jpg"]
 );
-let havePikmin = [0, 1]
-let result = []
-function restaurantChangeImg(i, c) {
+
+function restaurantChangeImg(c) {
     
     const pikminImg = document.getElementsByClassName('restaurantPikminImg');
     if (pikminImg[c].getAttribute('src') == restaurant_pic_srcs[c][0]) {
@@ -63,7 +62,6 @@ function restaurantChangeImg(i, c) {
         n --;
     }
 
-    
     counter.innerHTML = n;
 }
 
@@ -78,15 +76,18 @@ let cafe_pic_srcs = new Array(
     ["image/not-have-pikmin.jpg","image/have-pikmins/cafe-rock.jpg"],
     ["image/not-have-pikmin.jpg","image/have-pikmins/cafe-wing.jpg"]
 );
-function cafeChangeImg(i, c) {
+function cafeChangeImg(c) {
     
     const pikminImg = document.getElementsByClassName('cafePikminImg');
     if (pikminImg[c].getAttribute('src') == cafe_pic_srcs[c][0]) {
         pikminImg[c].src = cafe_pic_srcs[c][1];
+        n ++;
     } else if (pikminImg[c].getAttribute('src') == cafe_pic_srcs[c][1]) {
         pikminImg[c].src = cafe_pic_srcs[c][0];
+        n --;
     }
 
+    counter.innerHTML = n;
 }
 
 // <--------------   薬局タイプの画像配列と切り替え処理     -------------------->
@@ -99,14 +100,17 @@ let pharmacy_pic_srcs = new Array(
     ["image/not-have-pikmin.jpg","image/have-pikmins/pharmacy-rock.jpg"],
     ["image/not-have-pikmin.jpg","image/have-pikmins/pharmacy-wing.jpg"]
 );
-function pharmacyChangeImg(i, c) {
+function pharmacyChangeImg(c) {
     
     const pikminImg = document.getElementsByClassName('pharmacyPikminImg');
     if (pikminImg[c].getAttribute('src') == pharmacy_pic_srcs[c][0]) {
         pikminImg[c].src = pharmacy_pic_srcs[c][1];
+        n ++;
     } else if (pikminImg[c].getAttribute('src') == pharmacy_pic_srcs[c][1]) {
         pikminImg[c].src = pharmacy_pic_srcs[c][0];
+        n --;
     }
+    counter.innerHTML = n;
 
 }
 
@@ -120,15 +124,18 @@ let river_pic_srcs = new Array(
     ["image/not-have-pikmin.jpg","image/have-pikmins/river-rock.jpg"],
     ["image/not-have-pikmin.jpg","image/have-pikmins/river-wing.jpg"]
 );
-function riverChangeImg(i, c) {
+function riverChangeImg(c) {
     
     const pikminImg = document.getElementsByClassName('riverPikminImg');
     if (pikminImg[c].getAttribute('src') == river_pic_srcs[c][0]) {
         pikminImg[c].src = river_pic_srcs[c][1];
+        n ++;
     } else if (pikminImg[c].getAttribute('src') == river_pic_srcs[c][1]) {
         pikminImg[c].src = river_pic_srcs[c][0];
+        n --;
     }
-
+    counter.innerHTML = n;
+    
 }
 
 // <--------------   公園タイプの画像配列と切り替え処理     -------------------->
@@ -141,14 +148,17 @@ let park_pic_srcs = new Array(
     ["image/not-have-pikmin.jpg","image/have-pikmins/park-rock.jpg"],
     ["image/not-have-pikmin.jpg","image/have-pikmins/park-wing.jpg"]
 );
-function parkChangeImg(i, c) {
+function parkChangeImg(c) {
     
     const pikminImg = document.getElementsByClassName('parkPikminImg');
     if (pikminImg[c].getAttribute('src') == park_pic_srcs[c][0]) {
         pikminImg[c].src = park_pic_srcs[c][1];
+        n ++;
     } else if (pikminImg[c].getAttribute('src') == park_pic_srcs[c][1]) {
         pikminImg[c].src = park_pic_srcs[c][0];
+        n --;
     }
-
+    counter.innerHTML = n;
+    
 }
 

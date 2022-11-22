@@ -34,16 +34,16 @@ function restaurantChangeImg(i, c) {
     pikminImg[c].src=restaurant_pic_srcs[c][havePikmin[i]];
     console.log(havePikmin[i]);
     // console.log(havePikmin.reduce(function(sum, element){return sum+element}, 0))
-    if(havePikmin[i] == 1) {
-        result.push(1);
-    }else {
-        result.shift();
-    }
-    console.log(result)
-    console.log(result.length)
+    // if(havePikmin[i] == 1) {
+    //     result.push(1);
+    // }else {
+    //     result.shift();
+    // }
+    // console.log(result)
+    // console.log(result.length)
 }
-const count = result.length;
-console.log(count)
+// const count = result.length;
+// console.log(count)
 
 
 // <--------------   カフェタイプの画像配列と切り替え処理の関数     -------------------->

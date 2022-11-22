@@ -47,23 +47,24 @@ a {
     margin-top: 90px;
     position: fixed;
     opacity: 0.6;
-    animation: SlideIn 1.0s;
 }
 
-/* @keyframes SlideIn {
+.side-menu.open {
+    margin-left: 0px;
+}
+.side-menu.close {
+    margin-left: -200px;
+    animation: SlideOut 0.8s;
+}
+@keyframes SlideOut {
     0% {
         margin-left: 0;
     }
     100% {
         margin-left: -200px;
     }
-} */
-.side-menu.open {
-    margin-left: 0px;
 }
-.side-menu.close {
-    margin-left: -200px;
-}
+
 
 #openBtn {
     padding-top: 92px;
@@ -77,18 +78,7 @@ a {
     background-color: gray;
     cursor: pointer;
 }
-/* input[type="checkbox"]{
-    margin-left: -200px;
-} */
-/* .close-btn {
-    background-color: gray;
-    border: none;
-    width: 40px;
-    height: 40px;
-    font-size: 40px;
-    margin-left: 160px ;
-    cursor: pointer;
-} */
+
 .sidemenu-list {text-align: center;
 }
 .side-menu li{
